@@ -14,3 +14,52 @@
     "tsup": "^8.5.1"
   }
 }
+{
+  "name": "react-india-forms",
+  "version": "1.0.0",
+  "description": "India-specific form validators for React — PAN, Aadhaar, GST, IFSC",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.js --format cjs,esm --dts",
+    "test": "jest --experimental-vm-modules",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "india",
+    "pan",
+    "aadhaar",
+    "gst",
+    "ifsc",
+    "validator",
+    "form",
+    "indian-forms",
+    "kyc"
+  ],
+  "author": "Vansh Rathor",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "tsup": "^8.0.0"
+  },
+  "jest": {
+    "transform": {},
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VanshRathor20/react-india-forms"
+  },
+  "homepage": "https://github.com/VanshRathor20/react-india-forms#readme"
+}
