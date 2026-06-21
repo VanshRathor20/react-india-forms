@@ -1,22 +1,6 @@
 {
   "name": "react-india-forms",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "jest": "^30.4.2",
-    "tsup": "^8.5.1"
-  }
-}
-{
-  "name": "react-india-forms",
-  "version": "1.0.0",
   "description": "India-specific form validators for React — PAN, Aadhaar, GST, IFSC",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
