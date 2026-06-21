@@ -1,16 +1,17 @@
 {
   "name": "react-india-forms",
-  "version": "1.0.0",
-  "description": "India-specific form validators for React — PAN, Aadhaar, GST, IFSC",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
+"version": "1.0.0",
+"type": "module",
+"description": "India-specific form validators for React — PAN, Aadhaar, GST, IFSC",
+"main": "dist/index.cjs",
+"module": "dist/index.js",
+"types": "dist/index.d.ts",
+"exports": {
+  ".": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  }
+},
   "files": ["dist"],
   "scripts": {
     "build": "tsup src/index.js --format cjs,esm --dts",
@@ -25,13 +26,12 @@
     "tsup": "^8.0.0"
   },
   "jest": {
-    "transform": {},
-    "testEnvironment": "node",
-    "extensionsToTreatAsEsm": [".js"],
-    "moduleNameMapper": {
-      "^(\\.{1,2}/.*)\\.js$": "$1"
-    }
-  },
+  "transform": {},
+  "testEnvironment": "node",
+  "moduleNameMapper": {
+    "^(\\.{1,2}/.*)\\.js$": "$1"
+  }
+},
   "repository": {
     "type": "git",
     "url": "https://github.com/VanshRathor20/react-india-forms"
