@@ -97,8 +97,8 @@ describe('validateGST', () => {
   });
 
   test('invalid: bad state code', () => {
-    expect(validateGST('99ABCDE1234F1Z5').valid).toBe(false); // 99 not a real state
-  });
+  expect(validateGST('50ABCDE1234F1Z5').valid).toBe(false); // 50 doesn't exist
+});
 
   test('lowercase gets normalized', () => {
     const result = validateGST('07abcde1234f1z5');
